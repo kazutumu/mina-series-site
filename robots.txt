@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kazutumu.github.io/mina-series-site/sitemap.xml
