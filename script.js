@@ -55,15 +55,15 @@ const sideBooks = [
   },
   {
     label: "外伝 01",
-    title: "小鳥が見つけたミナ",
-    cover: "side-01-kotori-ga-mitsuketa-mina.jpg",
-    description: "世界の小さい観測者として、小鳥のほうからミナを見つめる外伝絵本。"
+    title: "ミナと庭の木",
+    cover: "side-01-mina-niwa-no-ki.jpg",
+    description: "庭の木の視点から、窓ごしに家の中のミナも見守る外伝絵本。"
   },
   {
     label: "外伝 02",
-    title: "窓ガラスが見ていたミナ",
-    cover: "side-02-madogarasu-ga-miteita-mina.jpg",
-    description: "部屋と庭のあいだから、窓ガラスがミナを見ていた外伝絵本。"
+    title: "小鳥が見つけたミナ",
+    cover: "side-02-kotori-ga-mitsuketa-mina.jpg",
+    description: "小鳥の視点から、本編『ミナとちいさな鳥』の出来事を見つめる外伝絵本。"
   }
 ];
 
