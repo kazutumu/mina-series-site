@@ -19,7 +19,13 @@ const mainBooks = [
   { no: 16, slug: "mina-ishikoro-kioku", title: "ミナと石ころのきおく", theme: "小さな記憶の絵本", group: "11-19" },
   { no: 17, slug: "mina-ari-michi", title: "ミナとありの道", theme: "足元の道をたどる絵本", group: "11-19" },
   { no: 18, slug: "mina-nekko-no-te", title: "ミナとねっこの手", theme: "地面の下にふれる絵本", group: "11-19", searchQuery: "ミナ ねっこ 手" },
-  { no: 19, slug: "mina-hiru-no-hoshi", title: "ミナとひるの星", theme: "見えない星を探す絵本", group: "11-19" }
+  { no: 19, slug: "mina-hiru-no-hoshi", title: "ミナとひるの星", theme: "見えない星を探す絵本", group: "11-19" },
+  { no: 20, slug: "mina-hoshi-no-shita-no-kusa", title: "ミナと星の下の草", theme: "遠くと近くを見つめる絵本", group: "20-25" },
+  { no: 21, slug: "mina-asa-no-shirushi", title: "ミナと朝のしるし", theme: "見えなくなったものの絵本", group: "20-25" },
+  { no: 22, slug: "mina-genkan-no-hana", title: "ミナと玄関の花", theme: "外と中が出会う絵本", group: "20-25" },
+  { no: 23, slug: "mina-tadaima-no-oto", title: "ミナとただいまの音", theme: "帰ってきた場所の絵本", group: "20-25" },
+  { no: 24, slug: "mina-kabin-no-mizu", title: "ミナと花びんの水", theme: "静かな水の小さな絵本", group: "20-25" },
+  { no: 25, slug: "mina-mado-no-shizuku", title: "ミナと窓のしずく", theme: "小さなしずくに映る絵本", group: "20-25" }
 ];
 
 const sideBooks = [
@@ -30,16 +36,41 @@ const sideBooks = [
     description: "1冊目から10冊目までの流れを、あとから静かに読み返すための研究ノート。"
   },
   {
+    label: "研究ノート 02",
+    title: "ミナの絵本研究ノート 2",
+    cover: "note-02.jpg",
+    description: "11冊目から20冊目までをまとめた、森研究所の小さな設定資料本。"
+  },
+  {
     label: "森研マガジン 01",
     title: "森研究所マガジン Vol.01",
     cover: "magazine-01.jpg",
     description: "『昼の星を探す場所』を軸にした、森研究所の最初のマガジン。"
+  },
+  {
+    label: "森研マガジン 02",
+    title: "森研究所マガジン Vol.02",
+    cover: "magazine-02.jpg",
+    description: "『ただいまのあとに見つけた水』を特集した、森研究所の制作記録。"
+  },
+  {
+    label: "外伝 01",
+    title: "小鳥が見つけたミナ",
+    cover: "side-01-kotori-ga-mitsuketa-mina.jpg",
+    description: "世界の小さい観測者として、小鳥のほうからミナを見つめる外伝絵本。"
+  },
+  {
+    label: "外伝 02",
+    title: "窓ガラスが見ていたミナ",
+    cover: "side-02-madogarasu-ga-miteita-mina.jpg",
+    description: "部屋と庭のあいだから、窓ガラスがミナを見ていた外伝絵本。"
   }
 ];
 
 const groupLabels = {
   "1-10": "1〜10冊目",
-  "11-19": "11〜19冊目"
+  "11-19": "11〜19冊目",
+  "20-25": "20〜25冊目"
 };
 
 function amazonSearchUrl(book) {
