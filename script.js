@@ -25,7 +25,14 @@ const mainBooks = [
   { no: 22, slug: "mina-genkan-no-hana", title: "ミナと玄関の花", theme: "外と中が出会う絵本", group: "20-25" },
   { no: 23, slug: "mina-tadaima-no-oto", title: "ミナとただいまの音", theme: "帰ってきた場所の絵本", group: "20-25" },
   { no: 24, slug: "mina-kabin-no-mizu", title: "ミナと花びんの水", theme: "静かな水の小さな絵本", group: "20-25" },
-  { no: 25, slug: "mina-mado-no-shizuku", title: "ミナと窓のしずく", theme: "小さなしずくに映る絵本", group: "20-25" }
+  { no: 25, slug: "mina-mado-no-shizuku", title: "ミナと窓のしずく", theme: "小さなしずくに映る絵本", group: "20-25" },
+  { no: 26, slug: "mina-shizuku-no-ato", title: "ミナとしずくのあと", theme: "消えたあとを見つめる絵本", group: "26-32" },
+  { no: 27, slug: "mina-hikari-no-hosoi-sen", title: "ミナと光のほそい線", theme: "次の道が見える絵本", group: "26-32" },
+  { no: 28, slug: "mina-curtain-no-kaze", title: "ミナとカーテンの風", theme: "外が少し近づく絵本", group: "26-32" },
+  { no: 29, slug: "mina-mado-no-muko-no-mushi-no-koe", title: "ミナと窓のむこうの虫の声", theme: "見えない声に季節を感じる絵本", group: "26-32" },
+  { no: 30, slug: "mina-asa-no-soto", title: "ミナと朝の外", theme: "窓のむこうへ出る絵本", group: "26-32" },
+  { no: 31, slug: "mina-asa-no-kage", title: "ミナと朝のかげ", theme: "ついてくる影の絵本", group: "26-32" },
+  { no: 32, slug: "mina-kusa-no-kusuguri", title: "ミナと草のくすぐり", theme: "そっとふれる外の絵本", group: "26-32" }
 ];
 
 const sideBooks = [
@@ -40,6 +47,12 @@ const sideBooks = [
     title: "ミナの絵本研究ノート 2",
     cover: "note-02.jpg",
     description: "11冊目から20冊目までをまとめた、森研究所の小さな設定資料本。"
+  },
+  {
+    label: "研究ノート 03",
+    title: "ミナの絵本研究ノート 3",
+    cover: "note-03.jpg",
+    description: "21冊目から30冊目までをまとめた、窓辺から朝の外へ向かう制作記録。"
   },
   {
     label: "森研マガジン 01",
@@ -64,13 +77,26 @@ const sideBooks = [
     title: "小鳥が見つけたミナ",
     cover: "side-02-kotori-ga-mitsuketa-mina.jpg",
     description: "小鳥の視点から、本編『ミナとちいさな鳥』の出来事を見つめる外伝絵本。"
+  },
+  {
+    label: "外伝 03",
+    title: "窓ガラスが見ていたミナ",
+    cover: "side-03-madogarasu-ga-miteita-mina.jpg",
+    description: "内と外のあいだから、反射や雨粒や光でミナを見ていた外伝絵本。"
+  },
+  {
+    label: "外伝 04",
+    title: "水たまりが見ていたミナ",
+    cover: "side-04-mizutamari-ga-miteita-mina.jpg",
+    description: "雨のあとだけ現れる水たまりの視点から、空とミナを映す外伝絵本。"
   }
 ];
 
 const groupLabels = {
   "1-10": "1〜10冊目",
   "11-19": "11〜19冊目",
-  "20-25": "20〜25冊目"
+  "20-25": "20〜25冊目",
+  "26-32": "26〜32冊目"
 };
 
 function amazonSearchUrl(book) {
