@@ -32,7 +32,15 @@ const mainBooks = [
   { no: 29, slug: "mina-mado-no-muko-no-mushi-no-koe", title: "ミナと窓のむこうの虫の声", theme: "見えない声に季節を感じる絵本", group: "26-32" },
   { no: 30, slug: "mina-asa-no-soto", title: "ミナと朝の外", theme: "窓のむこうへ出る絵本", group: "26-32" },
   { no: 31, slug: "mina-asa-no-kage", title: "ミナと朝のかげ", theme: "ついてくる影の絵本", group: "26-32" },
-  { no: 32, slug: "mina-kusa-no-kusuguri", title: "ミナと草のくすぐり", theme: "そっとふれる外の絵本", group: "26-32" }
+  { no: 32, slug: "mina-kusa-no-kusuguri", title: "ミナと草のくすぐり", theme: "そっとふれる外の絵本", group: "26-32" },
+  { no: 33, slug: "mina-nureta-kutsu", title: "ミナとぬれたくつ", theme: "外が足もとについてくる絵本", group: "33-40" },
+  { no: 34, slug: "mina-chiisana-ashiato", title: "ミナと小さな足あと", theme: "歩いたあとを見つめる絵本", group: "33-40" },
+  { no: 35, slug: "mina-ishi-no-hikari", title: "ミナと石のひかり", theme: "足もとの光を見る絵本", group: "33-40" },
+  { no: 36, slug: "mina-happa-no-sukima", title: "ミナと葉っぱのすきま", theme: "すきまから空を見る絵本", group: "33-40" },
+  { no: 37, slug: "mina-happa-no-kage", title: "ミナと葉っぱのかげ", theme: "光と影がふれてくる絵本", group: "33-40" },
+  { no: 38, slug: "mina-kumo-no-hashi", title: "ミナと雲のはし", theme: "動いていく白いところの絵本", group: "33-40" },
+  { no: 39, slug: "mina-sora-no-aoi-tokoro", title: "ミナと空の青いところ", theme: "何もないような広さの絵本", group: "33-40" },
+  { no: 40, slug: "mina-sora-no-hajimari", title: "ミナと空のはじまり", theme: "ここにも続く空の絵本", group: "33-40" }
 ];
 
 const sideBooks = [
@@ -55,6 +63,12 @@ const sideBooks = [
     description: "21冊目から30冊目までをまとめた、窓辺から朝の外へ向かう制作記録。"
   },
   {
+    label: "研究ノート 04",
+    title: "ミナの絵本研究ノート 4",
+    cover: "note-04.jpg",
+    description: "31冊目から40冊目までをまとめた、足もとから空のはじまりへ向かう制作記録。"
+  },
+  {
     label: "森研マガジン 01",
     title: "森研究所マガジン Vol.01",
     cover: "magazine-01.jpg",
@@ -65,6 +79,12 @@ const sideBooks = [
     title: "森研究所マガジン Vol.02",
     cover: "magazine-02.jpg",
     description: "『ただいまのあとに見つけた水』を特集した、森研究所の制作記録。"
+  },
+  {
+    label: "森研マガジン 03",
+    title: "森研究所マガジン Vol.03",
+    cover: "magazine-03.jpg",
+    description: "外へ出たミナと、森研究所の現実をまとめた不定期マガジン。"
   },
   {
     label: "外伝 01",
@@ -96,7 +116,8 @@ const groupLabels = {
   "1-10": "1〜10冊目",
   "11-19": "11〜19冊目",
   "20-25": "20〜25冊目",
-  "26-32": "26〜32冊目"
+  "26-32": "26〜32冊目",
+  "33-40": "33〜40冊目"
 };
 
 function amazonSearchUrl(book) {
