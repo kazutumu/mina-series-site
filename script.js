@@ -40,7 +40,14 @@ const mainBooks = [
   { no: 37, slug: "mina-happa-no-kage", title: "ミナと葉っぱのかげ", theme: "光と影がふれてくる絵本", group: "33-40" },
   { no: 38, slug: "mina-kumo-no-hashi", title: "ミナと雲のはし", theme: "動いていく白いところの絵本", group: "33-40" },
   { no: 39, slug: "mina-sora-no-aoi-tokoro", title: "ミナと空の青いところ", theme: "何もないような広さの絵本", group: "33-40" },
-  { no: 40, slug: "mina-sora-no-hajimari", title: "ミナと空のはじまり", theme: "ここにも続く空の絵本", group: "33-40" }
+  { no: 40, slug: "mina-sora-no-hajimari", title: "ミナと空のはじまり", theme: "ここにも続く空の絵本", group: "33-40" },
+  { no: 41, slug: "mina-sora-no-iro", title: "ミナと空の色", theme: "遠くにある色も、近くのものに少しずつ映っている絵本", group: "41-47" },
+  { no: 42, slug: "mina-sora-no-yuragi", title: "ミナと空のゆらぎ", theme: "同じ色の小さなゆらぎを見つめる絵本", group: "41-47" },
+  { no: 43, slug: "mina-hikari-no-hohoemi", title: "ミナと光のほほえみ", theme: "光が心を少しやわらかくする絵本", group: "41-47" },
+  { no: 44, slug: "mina-hikari-no-ato", title: "ミナと光のあと", theme: "消えたあとに残る明るさの絵本", group: "41-47" },
+  { no: 45, slug: "mina-asa-no-nioi", title: "ミナと朝のにおい", theme: "見えない朝のしるしを感じる絵本", group: "41-47" },
+  { no: 46, slug: "mina-tooku-no-oto", title: "ミナと遠くの音", theme: "見えないところから届く音の絵本", group: "41-47" },
+  { no: 47, slug: "mina-kaze-no-katachi", title: "ミナと風のかたち", theme: "見えない風のかたちを見つける絵本", group: "41-47" }
 ];
 
 const sideBooks = [
@@ -117,7 +124,8 @@ const groupLabels = {
   "11-19": "11〜19冊目",
   "20-25": "20〜25冊目",
   "26-32": "26〜32冊目",
-  "33-40": "33〜40冊目"
+  "33-40": "33〜40冊目",
+  "41-47": "41〜47冊目"
 };
 
 function amazonSearchUrl(book) {
