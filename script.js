@@ -47,7 +47,16 @@ const mainBooks = [
   { no: 44, slug: "mina-hikari-no-ato", title: "ミナと光のあと", theme: "消えたあとに残る明るさの絵本", group: "41-47" },
   { no: 45, slug: "mina-asa-no-nioi", title: "ミナと朝のにおい", theme: "見えない朝のしるしを感じる絵本", group: "41-47" },
   { no: 46, slug: "mina-tooku-no-oto", title: "ミナと遠くの音", theme: "見えないところから届く音の絵本", group: "41-47" },
-  { no: 47, slug: "mina-kaze-no-katachi", title: "ミナと風のかたち", theme: "見えない風のかたちを見つける絵本", group: "41-47" }
+  { no: 47, slug: "mina-kaze-no-katachi", title: "ミナと風のかたち", theme: "見えない風のかたちを見つける絵本", group: "41-47" },
+  { no: 48, slug: "mina-kage-no-ondo", title: "ミナと影の温度", theme: "影の涼しさとやわらかさを知る絵本", group: "48-56" },
+  { no: 49, slug: "mina-michi-no-kehai", title: "ミナと道の気配", theme: "まだ歩いていない道の気配を感じる絵本", group: "48-56" },
+  { no: 50, slug: "mina-sekai-no-iriguchi", title: "ミナと世界の入口", theme: "世界へ入っていく入口を見つける絵本", group: "48-56" },
+  { no: 51, slug: "mina-mukou-no-hikari", title: "ミナとむこうの光", theme: "知らない場所にも朝の光を見つける絵本", group: "48-56" },
+  { no: 52, slug: "mina-mukou-no-kusa", title: "ミナとむこうの草", theme: "新しい場所の足もとから返事をもらう絵本", group: "48-56" },
+  { no: 53, slug: "mina-komichi-no-kinomi", title: "ミナと小道の木の実", theme: "足もとの小道と上の木がつながる絵本", group: "48-56" },
+  { no: 54, slug: "mina-hana-no-mawari", title: "ミナと花のまわり", theme: "花のまわりに集まる小さな世界を見る絵本", group: "48-56" },
+  { no: 55, slug: "mina-hana-no-kage", title: "ミナと花のかげ", theme: "明るい花のそばの小さな影を見つめる絵本", group: "48-56" },
+  { no: 56, slug: "mina-kage-no-saki", title: "ミナと影のさき", theme: "影が光の中へ混ざっていく絵本", group: "48-56" }
 ];
 
 const sideBooks = [
@@ -74,6 +83,12 @@ const sideBooks = [
     title: "ミナの絵本研究ノート 4",
     cover: "note-04.jpg",
     description: "31冊目から40冊目までをまとめた、足もとから空のはじまりへ向かう制作記録。"
+  },
+  {
+    label: "研究ノート 05",
+    title: "ミナの絵本研究ノート 5",
+    cover: "note-05.jpg",
+    description: "41冊目から50冊目までをまとめた、空の色から世界の入口へ向かう制作記録。"
   },
   {
     label: "森研マガジン 01",
@@ -116,6 +131,12 @@ const sideBooks = [
     title: "水たまりが見ていたミナ",
     cover: "side-04-mizutamari-ga-miteita-mina.jpg",
     description: "雨のあとだけ現れる水たまりの視点から、空とミナを映す外伝絵本。"
+  },
+  {
+    label: "外伝 05",
+    title: "音が聞いていたミナ",
+    cover: "side-05-oto-ga-kiiteita-mina.jpg",
+    description: "足音や息、ページをめくる音から、形のない観測者がミナを聞いていた外伝絵本。"
   }
 ];
 
@@ -125,7 +146,8 @@ const groupLabels = {
   "20-25": "20〜25冊目",
   "26-32": "26〜32冊目",
   "33-40": "33〜40冊目",
-  "41-47": "41〜47冊目"
+  "41-47": "41〜47冊目",
+  "48-56": "48〜56冊目"
 };
 
 function amazonSearchUrl(book) {
