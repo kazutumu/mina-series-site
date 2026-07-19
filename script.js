@@ -56,7 +56,14 @@ const mainBooks = [
   { no: 53, slug: "mina-komichi-no-kinomi", title: "ミナと小道の木の実", theme: "足もとの小道と上の木がつながる絵本", group: "48-56" },
   { no: 54, slug: "mina-hana-no-mawari", title: "ミナと花のまわり", theme: "花のまわりに集まる小さな世界を見る絵本", group: "48-56" },
   { no: 55, slug: "mina-hana-no-kage", title: "ミナと花のかげ", theme: "明るい花のそばの小さな影を見つめる絵本", group: "48-56" },
-  { no: 56, slug: "mina-kage-no-saki", title: "ミナと影のさき", theme: "影が光の中へ混ざっていく絵本", group: "48-56" }
+  { no: 56, slug: "mina-kage-no-saki", title: "ミナと影のさき", theme: "影が光の中へ混ざっていく絵本", group: "48-56" },
+  { no: 57, slug: "mina-kusa-no-hikari", title: "ミナと草のひかり", theme: "草と光が出会う一瞬を見る絵本", group: "57-63" },
+  { no: 58, slug: "mina-kusa-no-mukou", title: "ミナと草のむこう", theme: "草のすきまのむこうを見る絵本", group: "57-63" },
+  { no: 59, slug: "mina-komichi-no-kaze", title: "ミナと小道の風", theme: "同じ風に向きをそろえる絵本", group: "57-63" },
+  { no: 60, slug: "mina-mori-no-iriguchi", title: "ミナと森の入口", theme: "入口の手前から始まる森の絵本", group: "57-63" },
+  { no: 61, slug: "mina-mori-no-ashimoto", title: "ミナと森の足もと", theme: "足もとの変化から森を知る絵本", group: "57-63" },
+  { no: 62, slug: "mina-ki-no-aida-no-hikari", title: "ミナと木の間のひかり", theme: "木の間の細いひかりを見つめる絵本", group: "57-63" },
+  { no: 63, slug: "mina-ha-no-yure", title: "ミナと葉のゆれ", theme: "葉のゆれと変わる明るさを見る絵本", group: "57-63" }
 ];
 
 const sideBooks = [
@@ -91,6 +98,12 @@ const sideBooks = [
     description: "41冊目から50冊目までをまとめた、空の色から世界の入口へ向かう制作記録。"
   },
   {
+    label: "研究ノート 06",
+    title: "ミナの絵本研究ノート 6",
+    cover: "note-06.jpg",
+    description: "51冊目から60冊目までをまとめた、世界の入口のむこうから森の入口へ向かう制作記録。"
+  },
+  {
     label: "森研マガジン 01",
     title: "森研究所マガジン Vol.01",
     cover: "magazine-01.jpg",
@@ -107,6 +120,13 @@ const sideBooks = [
     title: "森研究所マガジン Vol.03",
     cover: "magazine-03.jpg",
     description: "外へ出たミナと、森研究所の現実をまとめた不定期マガジン。"
+  },
+  {
+    label: "森研マガジン 04",
+    title: "森研究所マガジン Vol.04　身体の時間と、気づきの棚",
+    searchQuery: "森研究所マガジン 身体の時間 気づきの棚",
+    cover: "magazine-04.jpg",
+    description: "身体の時間と、森研究所に積み重なった気づきの棚を静かにたどる記録。"
   },
   {
     label: "外伝 01",
@@ -137,6 +157,12 @@ const sideBooks = [
     title: "音が聞いていたミナ",
     cover: "side-05-oto-ga-kiiteita-mina.jpg",
     description: "足音や息、ページをめくる音から、形のない観測者がミナを聞いていた外伝絵本。"
+  },
+  {
+    label: "外伝 06",
+    title: "影がついてきたミナ",
+    cover: "side-06-kage-ga-tsuitekita-mina.jpg",
+    description: "朝の光で生まれた影が、ミナの足もとについていきながら朝を覚えていた外伝絵本。"
   }
 ];
 
@@ -147,7 +173,8 @@ const groupLabels = {
   "26-32": "26〜32冊目",
   "33-40": "33〜40冊目",
   "41-47": "41〜47冊目",
-  "48-56": "48〜56冊目"
+  "48-56": "48〜56冊目",
+  "57-63": "57〜63冊目"
 };
 
 function amazonSearchUrl(book) {
