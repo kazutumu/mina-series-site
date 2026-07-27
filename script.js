@@ -63,7 +63,15 @@ const mainBooks = [
   { no: 60, slug: "mina-mori-no-iriguchi", title: "ミナと森の入口", theme: "入口の手前から始まる森の絵本", group: "57-63" },
   { no: 61, slug: "mina-mori-no-ashimoto", title: "ミナと森の足もと", theme: "足もとの変化から森を知る絵本", group: "57-63" },
   { no: 62, slug: "mina-ki-no-aida-no-hikari", title: "ミナと木の間のひかり", theme: "木の間の細いひかりを見つめる絵本", group: "57-63" },
-  { no: 63, slug: "mina-ha-no-yure", title: "ミナと葉のゆれ", theme: "葉のゆれと変わる明るさを見る絵本", group: "57-63" }
+  { no: 63, slug: "mina-ha-no-yure", title: "ミナと葉のゆれ", theme: "葉のゆれと変わる明るさを見る絵本", group: "57-63" },
+  { no: 64, slug: "mina-ki-no-hada", title: "ミナと木の肌", theme: "木の肌を、触れずに見つめる絵本", group: "64-71" },
+  { no: 65, slug: "mina-koke-no-hikari", title: "ミナと苔のひかり", theme: "苔の低いひかりを、踏まずに見つめる絵本", group: "64-71" },
+  { no: 66, slug: "mina-ochiba-no-kasanari", title: "ミナと落ち葉の重なり", theme: "落ち葉の重なりの下に残るものを見る絵本", group: "64-71" },
+  { no: 67, slug: "mina-ochiba-no-shita-no-oto", title: "ミナと落ち葉の下の音", theme: "見えない音を、めくらずに待つ絵本", group: "64-71" },
+  { no: 68, slug: "mina-nemoto-no-chiisana-ana", title: "ミナと根もとの小さな穴", theme: "見えない奥を、そっとしておく絵本", group: "64-71" },
+  { no: 69, slug: "mina-mori-no-hosoi-ito", title: "ミナと森の細い糸", theme: "壊れやすい細い道を、そのまま残す絵本", group: "64-71" },
+  { no: 70, slug: "mina-mori-no-hiraketa-tokoro", title: "ミナと森のひらけたところ", theme: "森の光を残したまま、ひらけた場所へ進む絵本", group: "64-71" },
+  { no: 71, slug: "mina-kusa-no-nami", title: "ミナと草の波", theme: "遠くから届く草の波を見送る絵本", group: "64-71" }
 ];
 
 const sideBooks = [
@@ -102,6 +110,12 @@ const sideBooks = [
     title: "ミナの絵本研究ノート 6",
     cover: "note-06.jpg",
     description: "51冊目から60冊目までをまとめた、世界の入口のむこうから森の入口へ向かう制作記録。"
+  },
+  {
+    label: "研究ノート 07",
+    title: "ミナの絵本研究ノート 7",
+    cover: "note-07.jpg",
+    description: "61冊目から70冊目までをまとめた、森の足もとからひらけた場所へ向かう制作記録。"
   },
   {
     label: "森研マガジン 01",
@@ -163,6 +177,12 @@ const sideBooks = [
     title: "影がついてきたミナ",
     cover: "side-06-kage-ga-tsuitekita-mina.jpg",
     description: "朝の光で生まれた影が、ミナの足もとについていきながら朝を覚えていた外伝絵本。"
+  },
+  {
+    label: "外伝 07",
+    title: "椅子が覚えていたミナ",
+    cover: "side-07-isu-ga-oboeteita-mina.jpg",
+    description: "椅子の視点から、座った重さやきしみ、立ち去ったあとのぬくもりを同じ場所で覚えていた外伝絵本。"
   }
 ];
 
@@ -174,7 +194,8 @@ const groupLabels = {
   "33-40": "33〜40冊目",
   "41-47": "41〜47冊目",
   "48-56": "48〜56冊目",
-  "57-63": "57〜63冊目"
+  "57-63": "57〜63冊目",
+  "64-71": "64〜71冊目"
 };
 
 function amazonSearchUrl(book) {
