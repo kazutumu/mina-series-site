@@ -201,9 +201,30 @@ h3 {
   background: var(--line);
 }
 
-.status-band article {
+.status-link {
+  display: block;
   padding: 1.2rem;
   background: rgba(255, 250, 239, 0.78);
+  color: inherit;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.status-link:hover,
+.status-link:focus-visible {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.94);
+  outline: 2px solid var(--gold);
+  outline-offset: -2px;
+}
+
+.status-link small {
+  display: inline-block;
+  margin-top: 0.65rem;
+  color: var(--moss);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
 }
 
 .status-band span,

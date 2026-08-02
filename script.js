@@ -226,6 +226,12 @@ function mainCoverName(book) {
   return `${padBookNo(book.no)}-${book.slug}.jpg`;
 }
 
+function sideBookType(book) {
+  if (book.label.startsWith("研究ノート")) return "note";
+  if (book.label.startsWith("森研マガジン")) return "magazine";
+  return "side";
+}
+
 function renderMainBooks(filter = "all") {
   const grid = document.querySelector("#book-grid");
   const books = filter === "all" ? mainBooks : mainBooks.filter((book) => book.group === filter);
@@ -245,11 +251,12 @@ function renderMainBooks(filter = "all") {
   `).join("");
 }
 
-function renderSideBooks() {
+function renderSideBooks(filter = "all") {
   const grid = document.querySelector("#side-grid");
+  const books = filter === "all" ? sideBooks : sideBooks.filter((book) => sideBookType(book) === filter);
 
-  grid.innerHTML = sideBooks.map((book) => `
-    <article class="side-card">
+  grid.innerHTML = books.map((book) => `
+    <article class="side-card" data-side-type="${sideBookType(book)}">
       <a class="side-cover-link" href="${amazonSearchUrl(book)}" target="_blank" rel="noreferrer" aria-label="${book.title}をAmazonで探す">
         <img src="${coverPath}${book.cover}" alt="${book.title} 表紙" loading="lazy">
       </a>
@@ -273,6 +280,24 @@ function setupFilters() {
   });
 }
 
+function selectSideFilter(filter) {
+  document.querySelectorAll(".side-filter").forEach((button) => {
+    button.classList.toggle("is-active", button.dataset.sideFilter === filter);
+  });
+  renderSideBooks(filter);
+}
+
+function setupSideFilters() {
+  document.querySelectorAll(".side-filter").forEach((button) => {
+    button.addEventListener("click", () => selectSideFilter(button.dataset.sideFilter));
+  });
+
+  document.querySelectorAll("[data-side-filter-link]").forEach((link) => {
+    link.addEventListener("click", () => selectSideFilter(link.dataset.sideFilterLink));
+  });
+}
+
 renderMainBooks();
 renderSideBooks();
 setupFilters();
+setupSideFilters();

@@ -20,7 +20,7 @@
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0054980586385736"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles.css?v=20260802-80" />
+    <link rel="stylesheet" href="styles.css?v=20260802-links" />
   </head>
   <body>
     <header class="site-header">
@@ -58,26 +58,30 @@
       </section>
 
       <section class="status-band" aria-label="現在の刊行状況">
-        <article>
+        <a class="status-link" href="#main-books">
           <span>本編</span>
           <strong>80冊</strong>
           <p>Amazonで公開確認できる本だけを掲載しています。</p>
-        </article>
-        <article>
+          <small>本棚を見る ↓</small>
+        </a>
+        <a class="status-link" href="#side-books" data-side-filter-link="note">
           <span>研究ノート</span>
           <strong>7冊</strong>
           <p>10冊ごとの制作記録。世界観を整理する本です。</p>
-        </article>
-        <article>
+          <small>研究ノートを見る ↓</small>
+        </a>
+        <a class="status-link" href="#side-books" data-side-filter-link="magazine">
           <span>マガジン</span>
           <strong>4冊</strong>
           <p>不定期の制作記録。あとで読み返すための本です。</p>
-        </article>
-        <article>
+          <small>マガジンを見る ↓</small>
+        </a>
+        <a class="status-link" href="#side-books" data-side-filter-link="side">
           <span>外伝</span>
           <strong>8冊</strong>
           <p>世界の小さい観測者として、本編とは別枠で掲載しています。</p>
-        </article>
+          <small>外伝を見る ↓</small>
+        </a>
       </section>
 
       <section id="guide" class="guide-section">
@@ -141,6 +145,12 @@
           <h2>本編とは別枠の本</h2>
           <p>研究ノートと森研究所マガジンは、本編冊数には数えない別枠です。</p>
         </div>
+        <div class="filters side-filters" aria-label="別枠の本フィルター">
+          <button class="filter side-filter is-active" type="button" data-side-filter="all">すべて</button>
+          <button class="filter side-filter" type="button" data-side-filter="note">研究ノート</button>
+          <button class="filter side-filter" type="button" data-side-filter="magazine">マガジン</button>
+          <button class="filter side-filter" type="button" data-side-filter="side">外伝</button>
+        </div>
         <div id="side-grid" class="side-grid"></div>
       </section>
 
@@ -163,6 +173,6 @@
       <p>作・構成　森研究所 / 昼の星を探しています。</p>
     </footer>
 
-    <script src="script.js?v=20260802-80"></script>
+    <script src="script.js?v=20260802-links"></script>
   </body>
 </html>
