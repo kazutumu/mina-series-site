@@ -71,7 +71,16 @@ const mainBooks = [
   { no: 68, slug: "mina-nemoto-no-chiisana-ana", title: "ミナと根もとの小さな穴", theme: "見えない奥を、そっとしておく絵本", group: "64-71" },
   { no: 69, slug: "mina-mori-no-hosoi-ito", title: "ミナと森の細い糸", theme: "壊れやすい細い道を、そのまま残す絵本", group: "64-71" },
   { no: 70, slug: "mina-mori-no-hiraketa-tokoro", title: "ミナと森のひらけたところ", theme: "森の光を残したまま、ひらけた場所へ進む絵本", group: "64-71" },
-  { no: 71, slug: "mina-kusa-no-nami", title: "ミナと草の波", theme: "遠くから届く草の波を見送る絵本", group: "64-71" }
+  { no: 71, slug: "mina-kusa-no-nami", title: "ミナと草の波", theme: "遠くから届く草の波を見送る絵本", group: "64-71" },
+  { no: 72, slug: "mina-tooku-no-ame", title: "ミナと遠くの雨", theme: "遠くの雨とここに残る明るさの距離を感じる絵本", group: "72-80" },
+  { no: 73, slug: "mina-nureta-kusa-no-sen", title: "ミナとぬれた草の線", theme: "雨のあとに並ぶ二つの時間と境目を見つめる絵本", group: "72-80" },
+  { no: 74, slug: "mina-sode-no-tentoumushi", title: "ミナと袖のてんとう虫", theme: "てんとう虫が残した小さな重さを受け取る絵本", group: "72-80" },
+  { no: 75, slug: "mina-yubi-ni-fureta-hana", title: "ミナと指にふれた花", theme: "一度だけ触れた花の柔らかさを受け取る絵本", group: "72-80" },
+  { no: 76, slug: "mina-sora-wo-wataru-watage", title: "ミナと空を渡る綿毛", theme: "綿毛をつかまえず空へ見送る絵本", group: "72-80" },
+  { no: 77, slug: "mina-tooku-no-oka", title: "ミナと遠くの丘", theme: "遠い丘との距離を急がず見つめる絵本", group: "72-80" },
+  { no: 78, slug: "mina-sougen-no-mukou-no-egao", title: "ミナと草原のむこうの笑顔", theme: "ひとりの静けさと遠くの笑顔が並ぶ絵本", group: "72-80" },
+  { no: 79, slug: "mina-chiisana-ki-no-hashi", title: "ミナと小さな木の橋", theme: "橋に残った誰かの手のぬくもりを感じる絵本", group: "72-80" },
+  { no: 80, slug: "mina-michi-no-tsuzuki", title: "ミナと道のつづき", theme: "歩いてきた道とこれからの道を同時に見る絵本", group: "72-80" }
 ];
 
 const sideBooks = [
@@ -183,6 +192,12 @@ const sideBooks = [
     title: "椅子が覚えていたミナ",
     cover: "side-07-isu-ga-oboeteita-mina.jpg",
     description: "椅子の視点から、座った重さやきしみ、立ち去ったあとのぬくもりを同じ場所で覚えていた外伝絵本。"
+  },
+  {
+    label: "外伝 08",
+    title: "草の種がついていったミナ",
+    cover: "side-08-kusa-no-tane-ga-tsuiteitta-mina.jpg",
+    description: "ミナの靴下に運ばれ、まだ知らない土に残った小さな草の種の時間を描く外伝絵本。"
   }
 ];
 
@@ -195,7 +210,8 @@ const groupLabels = {
   "41-47": "41〜47冊目",
   "48-56": "48〜56冊目",
   "57-63": "57〜63冊目",
-  "64-71": "64〜71冊目"
+  "64-71": "64〜71冊目",
+  "72-80": "72〜80冊目"
 };
 
 function amazonSearchUrl(book) {
