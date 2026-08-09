@@ -83,7 +83,7 @@ const mainBooks = [
   { no: 80, slug: "mina-michi-no-tsuzuki", title: "ミナと道のつづき", theme: "歩いてきた道とこれからの道を同時に見る絵本", group: "72-80" },
   { no: 81, slug: "mina-kaze-ni-fukuramu-shiroi-nuno", title: "ミナと風にふくらむ白い布", theme: "白い布と草と頬へ届く同じ風を感じる絵本", group: "81-89" },
   { no: 82, slug: "mina-kokage-no-mizu", title: "ミナと木かげの水", theme: "自分で受け取る水の冷たさと助け合いを描く絵本", group: "81-89" },
-  { no: 83, slug: "mina-sakamichi-no-ringo", title: "ミナと坂道のりんご", theme: "転がるりんごを見つめ、受け止めて返す絵本", group: "81-89" },
+  { no: 83, slug: "mina-sakamichi-no-ringo", title: "ミナと坂道のりんご", theme: "転がるりんごを見つめ、受け止めて返す絵本", group: "81-89", asin: "B0HDH5687T" },
   { no: 84, slug: "mina-futatsu-no-ashioto", title: "ミナと二つの足音", theme: "違う二つの足音が離れ、また並ぶ絵本", group: "81-89" },
   { no: 85, slug: "mina-yugata-no-yobu-koe", title: "ミナと夕方の呼ぶ声", theme: "それぞれを知る声を聞き、別々の道へ帰る絵本", group: "81-89" },
   { no: 86, slug: "mina-yugata-no-pan-no-nioi", title: "ミナと夕方のパンのにおい", theme: "パンのにおいが離れた二人へ同じ夕方を運ぶ絵本", group: "81-89" },
@@ -231,6 +231,7 @@ const groupLabels = {
 };
 
 function amazonSearchUrl(book) {
+  if (book.asin) return `https://www.amazon.co.jp/dp/${book.asin}`;
   return `https://www.amazon.co.jp/s?k=${encodeURIComponent(book.searchQuery || book.title)}`;
 }
 
