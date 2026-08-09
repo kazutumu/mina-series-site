@@ -80,7 +80,16 @@ const mainBooks = [
   { no: 77, slug: "mina-tooku-no-oka", title: "ミナと遠くの丘", theme: "遠い丘との距離を急がず見つめる絵本", group: "72-80" },
   { no: 78, slug: "mina-sougen-no-mukou-no-egao", title: "ミナと草原のむこうの笑顔", theme: "ひとりの静けさと遠くの笑顔が並ぶ絵本", group: "72-80" },
   { no: 79, slug: "mina-chiisana-ki-no-hashi", title: "ミナと小さな木の橋", theme: "橋に残った誰かの手のぬくもりを感じる絵本", group: "72-80" },
-  { no: 80, slug: "mina-michi-no-tsuzuki", title: "ミナと道のつづき", theme: "歩いてきた道とこれからの道を同時に見る絵本", group: "72-80" }
+  { no: 80, slug: "mina-michi-no-tsuzuki", title: "ミナと道のつづき", theme: "歩いてきた道とこれからの道を同時に見る絵本", group: "72-80" },
+  { no: 81, slug: "mina-kaze-ni-fukuramu-shiroi-nuno", title: "ミナと風にふくらむ白い布", theme: "白い布と草と頬へ届く同じ風を感じる絵本", group: "81-89" },
+  { no: 82, slug: "mina-kokage-no-mizu", title: "ミナと木かげの水", theme: "自分で受け取る水の冷たさと助け合いを描く絵本", group: "81-89" },
+  { no: 83, slug: "mina-sakamichi-no-ringo", title: "ミナと坂道のりんご", theme: "転がるりんごを見つめ、受け止めて返す絵本", group: "81-89" },
+  { no: 84, slug: "mina-futatsu-no-ashioto", title: "ミナと二つの足音", theme: "違う二つの足音が離れ、また並ぶ絵本", group: "81-89" },
+  { no: 85, slug: "mina-yugata-no-yobu-koe", title: "ミナと夕方の呼ぶ声", theme: "それぞれを知る声を聞き、別々の道へ帰る絵本", group: "81-89" },
+  { no: 86, slug: "mina-yugata-no-pan-no-nioi", title: "ミナと夕方のパンのにおい", theme: "パンのにおいが離れた二人へ同じ夕方を運ぶ絵本", group: "81-89" },
+  { no: 87, slug: "mina-yoru-no-temae-no-ao", title: "ミナと夜の手前の青", theme: "夕方から夜へ移る短い青を受け取る絵本", group: "81-89" },
+  { no: 88, slug: "mina-yoru-no-kabe-no-nukumori", title: "ミナと夜の壁のぬくもり", theme: "昼の光を残した壁のぬくもりに触れる絵本", group: "81-89" },
+  { no: 89, slug: "mina-yozora-no-okuyuki", title: "ミナと夜空の奥行き", theme: "いくつもの遠さが重なる夜空を見上げる絵本", group: "81-89" }
 ];
 
 const sideBooks = [
@@ -125,6 +134,12 @@ const sideBooks = [
     title: "ミナの絵本研究ノート 7",
     cover: "note-07.jpg",
     description: "61冊目から70冊目までをまとめた、森の足もとからひらけた場所へ向かう制作記録。"
+  },
+  {
+    label: "研究ノート 08",
+    title: "ミナの絵本研究ノート 8",
+    cover: "note-08.jpg",
+    description: "71冊目から80冊目までをまとめた、遠くの自然から人の気配と暮らしへ広がる制作記録。"
   },
   {
     label: "森研マガジン 01",
@@ -211,7 +226,8 @@ const groupLabels = {
   "48-56": "48〜56冊目",
   "57-63": "57〜63冊目",
   "64-71": "64〜71冊目",
-  "72-80": "72〜80冊目"
+  "72-80": "72〜80冊目",
+  "81-89": "81〜89冊目"
 };
 
 function amazonSearchUrl(book) {
