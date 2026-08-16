@@ -89,7 +89,15 @@ const mainBooks = [
   { no: 86, slug: "mina-yugata-no-pan-no-nioi", title: "ミナと夕方のパンのにおい", theme: "パンのにおいが離れた二人へ同じ夕方を運ぶ絵本", group: "81-89" },
   { no: 87, slug: "mina-yoru-no-temae-no-ao", title: "ミナと夜の手前の青", theme: "夕方から夜へ移る短い青を受け取る絵本", group: "81-89" },
   { no: 88, slug: "mina-yoru-no-kabe-no-nukumori", title: "ミナと夜の壁のぬくもり", theme: "昼の光を残した壁のぬくもりに触れる絵本", group: "81-89" },
-  { no: 89, slug: "mina-yozora-no-okuyuki", title: "ミナと夜空の奥行き", theme: "いくつもの遠さが重なる夜空を見上げる絵本", group: "81-89" }
+  { no: 89, slug: "mina-yozora-no-okuyuki", title: "ミナと夜空の奥行き", theme: "いくつもの遠さが重なる夜空を見上げる絵本", group: "81-89" },
+  { no: 90, slug: "mina-asa-ichiban-no-shiroi-kemuri", title: "ミナと朝いちばんの白いけむり", theme: "いくつもの屋根からのぼる白い煙に、それぞれの朝の始まりを感じる絵本", group: "90-97", asin: "B0HFF7YC2K" },
+  { no: 91, slug: "mina-asa-no-sorezore-no-michi", title: "ミナと朝のそれぞれの道", theme: "違う歩幅のまま、それぞれの朝の道へ進む絵本", group: "90-97", asin: "B0HFF39RW2" },
+  { no: 92, slug: "mina-ishimichi-no-mugitsubu", title: "ミナと石道の麦つぶ", theme: "石道の麦つぶから、人の暮らしと小鳥の朝のつながりを見る絵本", group: "90-97", asin: "B0HFF62MZD" },
+  { no: 93, slug: "mina-tooku-no-fusha", title: "ミナと遠くの風車", theme: "遠い風車と頬に届く同じ朝の風を感じる絵本", group: "90-97", asin: "B0HFDWTD6L" },
+  { no: 94, slug: "mina-asa-no-chiisana-kanazuchi", title: "ミナと朝の小さな金づち", theme: "椅子を直す小さな打音が静けさへ戻るまで見守る絵本", group: "90-97", asin: "B0HFFB343K" },
+  { no: 95, slug: "mina-hiru-no-kane", title: "ミナと昼の鐘", theme: "別々の仕事の手を止め、同じ空を見上げる昼の絵本", group: "90-97", asin: "B0HFFLMDR9" },
+  { no: 96, slug: "mina-ishigaki-no-owaru-tokoro", title: "ミナと石垣の終わるところ", theme: "石垣と草の道が切れずにつながる境目を歩く絵本", group: "90-97", asin: "B0HFF7QGPR" },
+  { no: 97, slug: "mina-murahazure-no-ki", title: "ミナと村はずれの木", theme: "村と草地へ枝を広げる一本の木に、二つの場所のつながりを見る絵本", group: "90-97", asin: "B0HFF3GKJB" }
 ];
 
 const sideBooks = [
@@ -140,6 +148,13 @@ const sideBooks = [
     title: "ミナの絵本研究ノート 8",
     cover: "note-08.jpg",
     description: "71冊目から80冊目までをまとめた、遠くの自然から人の気配と暮らしへ広がる制作記録。"
+  },
+  {
+    label: "研究ノート 09",
+    title: "ミナの絵本研究ノート 9",
+    cover: "note-09.jpg",
+    asin: "B0HFDRJD3D",
+    description: "81冊目から90冊目までをまとめた、村の暮らし、自立と助け合い、夕方・夜・朝の時間をたどる制作記録。"
   },
   {
     label: "森研マガジン 01",
@@ -213,6 +228,13 @@ const sideBooks = [
     title: "草の種がついていったミナ",
     cover: "side-08-kusa-no-tane-ga-tsuiteitta-mina.jpg",
     description: "ミナの靴下に運ばれ、まだ知らない土に残った小さな草の種の時間を描く外伝絵本。"
+  },
+  {
+    label: "外伝 09",
+    title: "本のページが待っていたミナ",
+    cover: "side-09-hon-no-page-ga-matteita-mina.jpg",
+    asin: "B0HFF1Y42Z",
+    description: "古い絵本の一ページの視点から、指の温度や読む速さを受け取り、閉じた暗がりで次の光を待つ外伝絵本。"
   }
 ];
 
@@ -227,7 +249,8 @@ const groupLabels = {
   "57-63": "57〜63冊目",
   "64-71": "64〜71冊目",
   "72-80": "72〜80冊目",
-  "81-89": "81〜89冊目"
+  "81-89": "81〜89冊目",
+  "90-97": "90〜97冊目"
 };
 
 function amazonSearchUrl(book) {
