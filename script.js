@@ -97,7 +97,10 @@ const mainBooks = [
   { no: 94, slug: "mina-asa-no-chiisana-kanazuchi", title: "ミナと朝の小さな金づち", theme: "椅子を直す小さな打音が静けさへ戻るまで見守る絵本", group: "90-97", asin: "B0HFFB343K" },
   { no: 95, slug: "mina-hiru-no-kane", title: "ミナと昼の鐘", theme: "別々の仕事の手を止め、同じ空を見上げる昼の絵本", group: "90-97", asin: "B0HFFLMDR9" },
   { no: 96, slug: "mina-ishigaki-no-owaru-tokoro", title: "ミナと石垣の終わるところ", theme: "石垣と草の道が切れずにつながる境目を歩く絵本", group: "90-97", asin: "B0HFF7QGPR" },
-  { no: 97, slug: "mina-murahazure-no-ki", title: "ミナと村はずれの木", theme: "村と草地へ枝を広げる一本の木に、二つの場所のつながりを見る絵本", group: "90-97", asin: "B0HFF3GKJB" }
+  { no: 97, slug: "mina-murahazure-no-ki", title: "ミナと村はずれの木", theme: "村と草地へ枝を広げる一本の木に、二つの場所のつながりを見る絵本", group: "90-97", asin: "B0HFF3GKJB" },
+  { no: 98, slug: "mina-furui-michishirube", title: "ミナと古い道しるべ", theme: "正解を示さない古い道しるべの前で、今の道を自分で選ぶ絵本", group: "98-100" },
+  { no: 99, slug: "mina-aruitekita-keshiki", title: "ミナと歩いてきた景色", theme: "村、木、石垣、森が一本の道でつながる景色として、歩みを振り返る絵本", group: "98-100" },
+  { no: 100, slug: "mina-sekai-no-tsuzuki", title: "ミナと世界のつづき", theme: "空のポケットと胸の光を受け、自分の足で世界の続きを歩く絵本", group: "98-100" }
 ];
 
 const sideBooks = [
@@ -155,6 +158,12 @@ const sideBooks = [
     cover: "note-09.jpg",
     asin: "B0HFDRJD3D",
     description: "81冊目から90冊目までをまとめた、村の暮らし、自立と助け合い、夕方・夜・朝の時間をたどる制作記録。"
+  },
+  {
+    label: "研究ノート 10",
+    title: "ミナの絵本研究ノート 10",
+    cover: "note-10.jpg",
+    description: "91冊目から100冊目と外伝全10冊を読み、本編完結と、その先にも続く世界の時間を残した制作記録。"
   },
   {
     label: "森研マガジン 01",
@@ -235,6 +244,12 @@ const sideBooks = [
     cover: "side-09-hon-no-page-ga-matteita-mina.jpg",
     asin: "B0HFF1Y42Z",
     description: "古い絵本の一ページの視点から、指の温度や読む速さを受け取り、閉じた暗がりで次の光を待つ外伝絵本。"
+  },
+  {
+    label: "外伝 10",
+    title: "足あとが見送ったミナ",
+    cover: "side-10-ashiato-ga-miokutta-mina.jpg",
+    description: "雨あがりの足あとが、その場からミナを見送り、雨で土へ戻ったあとにも続く道を残す外伝完結作。"
   }
 ];
 
@@ -250,7 +265,8 @@ const groupLabels = {
   "64-71": "64〜71冊目",
   "72-80": "72〜80冊目",
   "81-89": "81〜89冊目",
-  "90-97": "90〜97冊目"
+  "90-97": "90〜97冊目",
+  "98-100": "98〜100冊目"
 };
 
 function amazonSearchUrl(book) {
