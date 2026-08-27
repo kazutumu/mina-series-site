@@ -333,7 +333,7 @@ function renderMainBooks(filter = "all") {
   grid.innerHTML = books.map((book) => `
     <article class="book-card" data-group="${book.group}">
       <a class="book-cover-link" href="${amazonSearchUrl(book)}" target="_blank" rel="noreferrer" aria-label="${book.title}をAmazonで探す">
-        <img src="${coverPath}${mainCoverName(book)}" alt="${book.title} 表紙" loading="lazy">
+        <img src="${coverPath}${mainCoverName(book)}" alt="${book.title} 表紙" width="760" height="1216" loading="lazy">
       </a>
       <div class="book-card-body">
         <p class="book-meta">${padBookNo(book.no)} / ${groupLabels[book.group]}</p>
@@ -351,7 +351,7 @@ function renderBunkoBooks() {
   grid.innerHTML = bunkoBooks.map((book) => `
     <article class="bunko-card">
       <a class="side-cover-link" href="${amazonSearchUrl(book)}" target="_blank" rel="noreferrer" aria-label="${book.title}をAmazonで見る">
-        <img src="${coverPath}${book.cover}" alt="${book.title} 表紙" loading="lazy">
+        <img src="${coverPath}${book.cover}" alt="${book.title} 表紙" width="760" height="1216" loading="lazy">
       </a>
       <div>
         <p class="book-meta">${book.label}</p>
@@ -370,7 +370,7 @@ function renderSideBooks(filter = "all") {
   grid.innerHTML = books.map((book) => `
     <article class="side-card" data-side-type="${sideBookType(book)}">
       <a class="side-cover-link" href="${amazonSearchUrl(book)}" target="_blank" rel="noreferrer" aria-label="${book.title}をAmazonで探す">
-        <img src="${coverPath}${book.cover}" alt="${book.title} 表紙" loading="lazy">
+        <img src="${coverPath}${book.cover}" alt="${book.title} 表紙" width="760" height="1216" loading="lazy">
       </a>
       <div>
         <p class="book-meta">${book.label}</p>
