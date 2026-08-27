@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ミナの絵本シリーズ | 森研究所</title>
+    <title>ミナシリーズ | 森研究所</title>
     <meta
       name="description"
-      content="森研究所が制作する、ミナの絵本シリーズの本棚。Amazonで公開確認できる本編、研究ノート、森研究所マガジンを掲載しています。"
+      content="森研究所が制作するミナシリーズの本棚。Amazonで公開確認できる絵本、研究ノート、ミナ文庫、森研究所マガジン、外伝を掲載しています。"
     />
-    <meta property="og:title" content="ミナの絵本シリーズ | 森研究所" />
+    <meta property="og:title" content="ミナシリーズ | 森研究所" />
     <meta
       property="og:description"
-      content="小さな気配を見つめる絵本、ミナの絵本シリーズの本棚です。"
+      content="小さな気配を見つめる絵本と、成長したミナの長編を並べたミナシリーズの本棚です。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="100-mina-sekai-no-tsuzuki.jpg" />
@@ -20,16 +20,17 @@
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0054980586385736"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles.css?v=20260823-100" />
+    <link rel="stylesheet" href="styles.css?v=20260827-bunko-05" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="ミナの絵本シリーズ トップへ">
+      <a class="brand" href="#top" aria-label="ミナシリーズ トップへ">
         <span class="brand-mark">M</span>
-        <span>ミナの絵本シリーズ</span>
+        <span>ミナシリーズ</span>
       </a>
       <nav class="nav" aria-label="ページ内ナビゲーション">
         <a href="#main-books">本編</a>
+        <a href="#bunko-books">ミナ文庫</a>
         <a href="#guide">読み方</a>
         <a href="#side-books">別枠</a>
         <a href="#about">森研究所</a>
@@ -37,15 +38,16 @@
     </header>
 
     <main id="top">
-      <section class="hero" aria-label="ミナの絵本シリーズ">
+      <section class="hero" aria-label="ミナシリーズ">
         <div class="hero-copy">
-          <p class="eyebrow">Mori Lab Picture Books</p>
-          <h1>ミナの絵本シリーズ</h1>
+          <p class="eyebrow">Mori Lab Mina Series</p>
+          <h1>ミナシリーズ</h1>
           <p class="lead">
-            小さな気配を見つめる子、ミナの絵本。Amazonで公開確認できる本をここに並べました。
+            小さな気配を見つめる絵本と、成長したミナが自分の道を選んでいく長編。Amazonで公開確認できる本をここに並べました。
           </p>
           <div class="hero-actions" aria-label="主要リンク">
             <a class="button primary" href="#main-books">本編を見る</a>
+            <a class="button" href="#bunko-books">ミナ文庫を見る</a>
             <a class="button" href="#guide">読む順番を見る</a>
             <a class="button" href="https://www.amazon.co.jp/stores/%E3%81%88%E3%81%8F%E3%81%AE/author/B0H29YF2X4?ref=ap_rdr&shoppingPortalEnabled=true" target="_blank" rel="noreferrer">Amazon著者ページ</a>
           </div>
@@ -63,6 +65,12 @@
           <strong>100冊</strong>
           <p>Amazonで公開確認できる本だけを掲載しています。</p>
           <small>本棚を見る ↓</small>
+        </a>
+        <a class="status-link" href="#bunko-books">
+          <span>ミナ文庫</span>
+          <strong>5冊</strong>
+          <p>成長したミナを描く長編。独立したシリーズです。</p>
+          <small>ミナ文庫を見る ↓</small>
         </a>
         <a class="status-link" href="#side-books" data-side-filter-link="note">
           <span>研究ノート</span>
@@ -102,14 +110,20 @@
             <p>10冊ごとの流れを振り返るための記録です。</p>
             <small>研究ノートを見る ↓</small>
           </a>
-          <a class="guide-link" href="#side-books" data-side-filter-link="magazine">
+          <a class="guide-link" href="#bunko-books">
             <span>3</span>
+            <h3>文庫で成長後の道へ</h3>
+            <p>本編のあとに続く時間を、巻をまたぐ長編として読み進めます。</p>
+            <small>ミナ文庫を見る ↓</small>
+          </a>
+          <a class="guide-link" href="#side-books" data-side-filter-link="magazine">
+            <span>4</span>
             <h3>マガジンは気になる時に</h3>
             <p>制作中の空気や、その時の森研究所の考えをそっと残しています。</p>
             <small>マガジンを見る ↓</small>
           </a>
           <a class="guide-link" href="#side-books" data-side-filter-link="side">
-            <span>4</span>
+            <span>5</span>
             <h3>外伝は別のまなざしで</h3>
             <p>本編がミナの見る世界なら、外伝は世界がミナを見ていた記録です。</p>
             <small>外伝を見る ↓</small>
@@ -146,11 +160,24 @@
         <div id="book-grid" class="book-grid" aria-live="polite"></div>
       </section>
 
+      <section id="bunko-books" class="bunko-section">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Mina Bunko</p>
+            <h2>ミナ文庫の本棚</h2>
+          </div>
+          <p>
+            本編100冊のあと、成長したミナの時間を描く長編『ミナといくつもの道』。旧本編の101冊目ではなく、独立したシリーズです。
+          </p>
+        </div>
+        <div id="bunko-grid" class="bunko-grid" aria-live="polite"></div>
+      </section>
+
       <section id="side-books" class="side-section">
         <div class="section-heading">
           <p class="eyebrow">Notes / Magazine / Side Stories</p>
           <h2>本編とは別枠の本</h2>
-          <p>研究ノートと森研究所マガジンは、本編冊数には数えない別枠です。</p>
+          <p>研究ノート、森研究所マガジン、外伝は、本編冊数には数えない別枠です。</p>
         </div>
         <div class="filters side-filters" aria-label="別枠の本フィルター">
           <button class="filter side-filter is-active" type="button" data-side-filter="all">すべて</button>
@@ -158,7 +185,7 @@
           <button class="filter side-filter" type="button" data-side-filter="magazine">マガジン</button>
           <button class="filter side-filter" type="button" data-side-filter="side">外伝</button>
         </div>
-        <div id="side-grid" class="side-grid"></div>
+        <div id="side-grid" class="side-grid" aria-live="polite"></div>
       </section>
 
       <section id="about" class="about-section">
@@ -168,7 +195,7 @@
         </div>
         <p>
           森研究所は、感覚・好奇心・言葉・意識を、遊びながら研究する場所です。
-          ミナの絵本シリーズでは、日常の中にある小さな気配や、触れるか触れないかの感覚を、静かな絵本として残しています。
+          ミナシリーズでは、日常の中にある小さな気配や、触れるか触れないかの感覚を絵本として残し、その先で成長したミナの時間を長編として描いています。
         </p>
         <p class="note">
           このページでは、Amazonで公開確認できる作品だけを掲載しています。最新の公開状況はAmazon著者ページでも確認できます。
@@ -180,6 +207,6 @@
       <p>作・構成　森研究所 / 昼の星を探しています。</p>
     </footer>
 
-    <script src="script.js?v=20260823-100"></script>
+    <script src="script.js?v=20260827-bunko-05"></script>
   </body>
 </html>

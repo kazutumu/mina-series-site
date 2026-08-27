@@ -168,6 +168,14 @@ h3 {
   color: var(--soft);
 }
 
+.button:hover,
+.button:focus-visible,
+.filter:hover,
+.filter:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
 .hero-shelf {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -194,7 +202,7 @@ h3 {
 
 .status-band {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   gap: 1px;
   margin: 0 clamp(1rem, 6vw, 5rem) clamp(3rem, 6vw, 5rem);
   border: 1px solid var(--line);
@@ -255,9 +263,18 @@ h3 {
 
 .guide-section,
 .books-section,
+.bunko-section,
 .side-section,
 .about-section {
   padding: clamp(3rem, 7vw, 6rem) clamp(1rem, 6vw, 5rem);
+}
+
+#guide,
+#main-books,
+#bunko-books,
+#side-books,
+#about {
+  scroll-margin-top: 6.5rem;
 }
 
 .section-heading {
@@ -279,7 +296,7 @@ h3 {
 
 .guide-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   gap: 1rem;
 }
 
@@ -333,6 +350,7 @@ h3 {
 }
 
 .book-card,
+.bunko-card,
 .side-card {
   display: flex;
   flex-direction: column;
@@ -341,12 +359,14 @@ h3 {
 }
 
 .book-card-body,
+.bunko-card > div,
 .side-card > div {
   display: grid;
   gap: 0.25rem;
 }
 
 .book-card h3,
+.bunko-card h3,
 .side-card h3 {
   color: var(--ink);
   font-weight: 800;
@@ -354,6 +374,7 @@ h3 {
 }
 
 .book-card-body p,
+.bunko-card p,
 .side-card p {
   color: rgba(39, 49, 41, 0.64);
   font-size: 0.9rem;
@@ -389,10 +410,16 @@ h3 {
   font-weight: 800;
 }
 
+.bunko-grid,
 .side-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
   gap: 1.2rem;
+}
+
+.bunko-section {
+  border-block: 1px solid rgba(127, 158, 172, 0.22);
+  background: rgba(241, 246, 247, 0.48);
 }
 
 .about-section {

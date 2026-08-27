@@ -103,6 +103,44 @@ const mainBooks = [
   { no: 100, slug: "mina-sekai-no-tsuzuki", title: "ミナと世界のつづき", theme: "空のポケットと胸の光を受け、自分の足で世界の続きを歩く絵本", group: "98-100" }
 ];
 
+const bunkoBooks = [
+  {
+    label: "ミナ文庫 01",
+    title: "ミナといくつもの道：風の通る教室",
+    cover: "bunko-01-kaze-no-toru-kyoshitsu.jpg",
+    asin: "B0HG6PTZZ4",
+    description: "春の古い水路を調べる中で、成長したミナが学びと地域の仕事をつなぎ、自分の役割の入口を見つける長編第1巻。"
+  },
+  {
+    label: "ミナ文庫 02",
+    title: "ミナといくつもの道：夏の仕事場",
+    cover: "bunko-02-natsu-no-shigotoba.jpg",
+    asin: "B0HG7KKYP4",
+    description: "夏の村をめぐる配達の道で、手伝うこと、任されること、誰かへ渡すことを知っていく長編第2巻。"
+  },
+  {
+    label: "ミナ文庫 03",
+    title: "ミナといくつもの道：知らない人の来た秋",
+    cover: "bunko-03-shiranai-hito-no-kita-aki.jpg",
+    asin: "B0H6JMPYBP",
+    description: "村へ来た記録員との出会いを通して、故郷を見る目と外から見る目を重ねていく長編第3巻。"
+  },
+  {
+    label: "ミナ文庫 04",
+    title: "ミナといくつもの道：それぞれの冬支度",
+    cover: "bunko-04-sorezore-no-fuyujitaku.jpg",
+    asin: "B0HG7Q7HP7",
+    description: "選ばなかった道をなくさず、今歩く道へ返事をする。雪の村でそれぞれの選択が動き始める長編第4巻。"
+  },
+  {
+    label: "ミナ文庫 05",
+    title: "ミナといくつもの道：春を待つ道",
+    cover: "bunko-05-haru-wo-matsu-michi.jpg",
+    asin: "B0HG7W1KVW",
+    description: "雪解けで変わる道と役割を受け取りながら、ミナが自分の歩幅を見つけていく長編第5巻。"
+  }
+];
+
 const sideBooks = [
   {
     label: "研究ノート 01",
@@ -307,6 +345,24 @@ function renderMainBooks(filter = "all") {
   `).join("");
 }
 
+function renderBunkoBooks() {
+  const grid = document.querySelector("#bunko-grid");
+
+  grid.innerHTML = bunkoBooks.map((book) => `
+    <article class="bunko-card">
+      <a class="side-cover-link" href="${amazonSearchUrl(book)}" target="_blank" rel="noreferrer" aria-label="${book.title}をAmazonで見る">
+        <img src="${coverPath}${book.cover}" alt="${book.title} 表紙" loading="lazy">
+      </a>
+      <div>
+        <p class="book-meta">${book.label}</p>
+        <h3>${book.title}</h3>
+        <p>${book.description}</p>
+        <a class="text-link" href="${amazonSearchUrl(book)}" target="_blank" rel="noreferrer">Amazonで見る</a>
+      </div>
+    </article>
+  `).join("");
+}
+
 function renderSideBooks(filter = "all") {
   const grid = document.querySelector("#side-grid");
   const books = filter === "all" ? sideBooks : sideBooks.filter((book) => sideBookType(book) === filter);
@@ -327,10 +383,17 @@ function renderSideBooks(filter = "all") {
 }
 
 function setupFilters() {
-  document.querySelectorAll(".filter").forEach((button) => {
+  const buttons = document.querySelectorAll("[data-filter]");
+
+  buttons.forEach((button) => {
+    button.setAttribute("aria-pressed", String(button.classList.contains("is-active")));
     button.addEventListener("click", () => {
-      document.querySelectorAll(".filter").forEach((item) => item.classList.remove("is-active"));
+      buttons.forEach((item) => {
+        item.classList.remove("is-active");
+        item.setAttribute("aria-pressed", "false");
+      });
       button.classList.add("is-active");
+      button.setAttribute("aria-pressed", "true");
       renderMainBooks(button.dataset.filter);
     });
   });
@@ -338,7 +401,9 @@ function setupFilters() {
 
 function selectSideFilter(filter) {
   document.querySelectorAll(".side-filter").forEach((button) => {
-    button.classList.toggle("is-active", button.dataset.sideFilter === filter);
+    const isActive = button.dataset.sideFilter === filter;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
   });
   renderSideBooks(filter);
 }
@@ -354,6 +419,7 @@ function setupSideFilters() {
 }
 
 renderMainBooks();
+renderBunkoBooks();
 renderSideBooks();
 setupFilters();
 setupSideFilters();
