@@ -138,6 +138,13 @@ const bunkoBooks = [
     cover: "bunko-05-haru-wo-matsu-michi.jpg",
     asin: "B0HG7W1KVW",
     description: "雪解けで変わる道と役割を受け取りながら、ミナが自分の歩幅を見つけていく長編第5巻。"
+  },
+  {
+    label: "ミナ文庫 06・成長編完結",
+    title: "ミナといくつもの道：朝、扉を開ける前",
+    cover: "bunko-06-asa-tobira-wo-akeru-mae.jpg",
+    asin: "B0HH7X5PGQ",
+    description: "同じ時間割で集まる最後の日まで、あと四十日。地域の記録所での経験と仲間それぞれの道を通して、働き始める朝へ歩む長編第6巻。成長編、完結。"
   }
 ];
 
