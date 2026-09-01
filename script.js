@@ -333,6 +333,16 @@ function sideBookType(book) {
   return "side";
 }
 
+function sideBookId(book) {
+  const match = book.label.match(/^研究ノート\s+(\d+)/);
+  return match ? `research-note-${match[1].padStart(2, "0")}` : "";
+}
+
+function sideBookIdAttribute(book) {
+  const id = sideBookId(book);
+  return id ? `id="${id}"` : "";
+}
+
 function renderMainBooks(filter = "all") {
   const grid = document.querySelector("#book-grid");
   const books = filter === "all" ? mainBooks : mainBooks.filter((book) => book.group === filter);
@@ -375,7 +385,7 @@ function renderSideBooks(filter = "all") {
   const books = filter === "all" ? sideBooks : sideBooks.filter((book) => sideBookType(book) === filter);
 
   grid.innerHTML = books.map((book) => `
-    <article class="side-card" data-side-type="${sideBookType(book)}">
+    <article class="side-card" ${sideBookIdAttribute(book)} data-side-type="${sideBookType(book)}">
       <a class="side-cover-link" href="${amazonSearchUrl(book)}" target="_blank" rel="noreferrer" aria-label="${book.title}をAmazonで探す">
         <img src="${coverPath}${book.cover}" alt="${book.title} 表紙" width="760" height="1216" loading="lazy">
       </a>
