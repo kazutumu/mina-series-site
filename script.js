@@ -148,6 +148,12 @@ const bunkoBooks = [
   }
 ];
 
+const workBooks = [
+  { label: "仕事編 01", title: "ミナと朝の記録室：扉を開けた朝", cover: "bunko-shigoto-01.jpg", asin: "B0H8MC8C1P", description: "暮らしの記録室で働き始めたミナが、最初の失敗と判断を通して、人の言葉が戻ってこられる記録を探す仕事編第1巻。" },
+  { label: "仕事編 02", title: "ミナと朝の記録室：雨の日の受け渡し", cover: "bunko-shigoto-02.jpg", asin: "B0H3CS6G1Z", description: "雨の日の共同干し場をめぐる相談から、紙には見えなかった誰かの一日を知り、自分一人で抱えずに仕事を渡すことを覚える第2巻。" },
+  { label: "仕事編 03", title: "ミナと朝の記録室：地図を持っていく朝", cover: "bunko-shigoto-03.jpg", asin: "B0HH2VC95G", description: "橋が閉じる十二日間。地図と小さな机を持って記録室の外へ向かったミナが、道と許可、親切と仕事、人へ渡すことを学ぶ第3巻。" }
+];
+
 const sideBooks = [
   {
     label: "研究ノート 01",
@@ -362,10 +368,10 @@ function renderMainBooks(filter = "all") {
   `).join("");
 }
 
-function renderBunkoBooks() {
-  const grid = document.querySelector("#bunko-grid");
+function renderBunkoBooks(books = bunkoBooks, selector = "#bunko-grid") {
+  const grid = document.querySelector(selector);
 
-  grid.innerHTML = bunkoBooks.map((book) => `
+  grid.innerHTML = books.map((book) => `
     <article class="bunko-card">
       <a class="side-cover-link" href="${amazonSearchUrl(book)}" target="_blank" rel="noreferrer" aria-label="${book.title}をAmazonで見る">
         <img src="${coverPath}${book.cover}" alt="${book.title} 表紙" width="760" height="1216" loading="lazy">
@@ -437,6 +443,7 @@ function setupSideFilters() {
 
 renderMainBooks();
 renderBunkoBooks();
+renderBunkoBooks(workBooks, "#work-grid");
 renderSideBooks();
 setupFilters();
 setupSideFilters();
