@@ -152,6 +152,9 @@ const workBooks = [
   { label: "仕事編 01", title: "ミナと朝の記録室：扉を開けた朝", cover: "bunko-shigoto-01.jpg", asin: "B0H8MC8C1P", description: "暮らしの記録室で働き始めたミナが、最初の失敗と判断を通して、人の言葉が戻ってこられる記録を探す仕事編第1巻。" },
   { label: "仕事編 02", title: "ミナと朝の記録室：雨の日の受け渡し", cover: "bunko-shigoto-02.jpg", asin: "B0H3CS6G1Z", description: "雨の日の共同干し場をめぐる相談から、紙には見えなかった誰かの一日を知り、自分一人で抱えずに仕事を渡すことを覚える第2巻。" },
   { label: "仕事編 03", title: "ミナと朝の記録室：地図を持っていく朝", cover: "bunko-shigoto-03.jpg", asin: "B0HH2VC95G", description: "橋が閉じる十二日間。地図と小さな机を持って記録室の外へ向かったミナが、道と許可、親切と仕事、人へ渡すことを学ぶ第3巻。" }
+  ,{ label: "仕事編 04", title: "ミナと朝の記録室：靴音の戻る店", cover: "bunko-shigoto-04.jpg", asin: "B0HK5NR8PL", description: "石段の上の靴屋で、父と娘の違う仕事をつなぐミナ。働く人の誇りと任せる不安、仕事ではない午後を描く第4巻。" }
+  ,{ label: "仕事編 05", title: "ミナと朝の記録室：灯りの届く夕べ", cover: "bunko-shigoto-05.jpg", asin: "B0HK6RJS5L", description: "学び舎の小さな展示を通して、仕事の紹介と私生活、見せることと売ることの間で、相手の言葉を聞き直す第5巻。" }
+  ,{ label: "仕事編 06", title: "ミナと朝の記録室：帰る場所のある朝", cover: "bunko-shigoto-06.jpg", asin: "B0HK72TYJT", description: "働き始めて半年。秋へ渡す案内と自分の仕事を見直し、戻ってこられる場所を残す第6巻。仕事編全6巻完結。ミナの物語は、まだ続きます。" }
 ];
 
 const sideBooks = [
