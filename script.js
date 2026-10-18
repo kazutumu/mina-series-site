@@ -162,7 +162,6 @@ const workBooks = [
 ];
 
 const sideBooks = [
-  { label: "森研マガジン 05", title: "森研究所マガジン Vol.05　役割が生まれた森と、静かな制作室", searchQuery: "森研究所マガジン Vol.05 役割が生まれた森", cover: "magazine-05.jpg", description: "森研究所に生まれた役割と委任、共有の記録をたどる制作誌。森研究所全体の活動を見つめます。" },
   {
     label: "研究ノート 01",
     title: "ミナの絵本研究ノート",
@@ -248,6 +247,13 @@ const sideBooks = [
     searchQuery: "森研究所マガジン 身体の時間 気づきの棚",
     cover: "magazine-04.jpg",
     description: "身体の時間と、森研究所に積み重なった気づきの棚を静かにたどる記録。"
+  },
+  {
+    label: "森研マガジン 05",
+    title: "森研究所マガジン Vol.05　役割が生まれた森と、静かな制作室",
+    searchQuery: "森研究所マガジン Vol.05 役割が生まれた森",
+    cover: "magazine-05.jpg",
+    description: "森研究所に生まれた役割と委任、共有の記録をたどる制作誌。森研究所全体の活動を見つめます。"
   },
   {
     label: "外伝 01",
