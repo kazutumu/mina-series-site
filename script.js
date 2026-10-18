@@ -1,5 +1,9 @@
 const coverPath = "";
 
+const dailyBooks = [
+  { label: "ミナの日常 第001巻", title: "ミナの日常：帰り道のちいさな帆", cover: "nichijo-001.jpg", asin: "B0HN74N3P8", description: "学生のミナが身近な景色の小さな気配に出会う、新しい絵本シリーズの第1巻。" }
+];
+
 const mainBooks = [
   { no: 1, slug: "hoshi-pocket", title: "ほしをしまったポケット", theme: "ちいさな勇気の絵本", group: "1-10" },
   { no: 2, slug: "mina-mamorigiri", title: "ミナとまもりぎり", theme: "見えないやさしさの絵本", group: "1-10" },
@@ -158,6 +162,7 @@ const workBooks = [
 ];
 
 const sideBooks = [
+  { label: "森研マガジン 05", title: "森研究所マガジン Vol.05　役割が生まれた森と、静かな制作室", searchQuery: "森研究所マガジン Vol.05 役割が生まれた森", cover: "magazine-05.jpg", description: "森研究所に生まれた役割と委任、共有の記録をたどる制作誌。森研究所全体の活動を見つめます。" },
   {
     label: "研究ノート 01",
     title: "ミナの絵本研究ノート",
@@ -446,6 +451,7 @@ function setupSideFilters() {
 
 renderMainBooks();
 renderBunkoBooks();
+renderBunkoBooks(dailyBooks, "#daily-grid");
 renderBunkoBooks(workBooks, "#work-grid");
 renderSideBooks();
 setupFilters();
