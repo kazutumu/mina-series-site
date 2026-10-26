@@ -1,7 +1,10 @@
 const coverPath = "";
 
 const dailyBooks = [
-  { label: "ミナの日常 第001巻", title: "ミナの日常：帰り道のちいさな帆", cover: "nichijo-001.jpg", asin: "B0HN74N3P8", description: "学生のミナが身近な景色の小さな気配に出会う、新しい絵本シリーズの第1巻。" }
+  { label: "ミナの日常 第001巻", title: "ミナの日常：帰り道のちいさな帆", cover: "nichijo-001.jpg", asin: "B0HN74N3P8", description: "学生のミナが身近な景色の小さな気配に出会う、新しい絵本シリーズの第1巻。" },
+  { label: "ミナの日常 第002巻", title: "ミナの日常：ベンチの乾いたところ", cover: "nichijo-002.jpg", asin: "B0HNGVQ3K5", description: "雨あがりの帰り道、ミナが見つけたベンチの乾いた場所。小鳥と過ごす、ひと休みの物語。" },
+  { label: "ミナの日常 第003巻", title: "ミナの日常：窓ぎわのひなた番", cover: "nichijo-003.jpg", asin: "B0HNH3FBNZ", description: "本を持ったミナと猫が、窓ぎわのひなたを半分こ。少しずつ動く光を追う、読書のひととき。" },
+  { label: "ミナの日常 第004巻", title: "ミナの日常：落ち葉の待ち合わせ", cover: "nichijo-004.jpg", asin: "B0HP8WZJ3T", description: "石垣のそばに集まった色とりどりの落ち葉。風に動く葉っぱを見守る、森の小道の小さな出来事。" }
 ];
 
 const mainBooks = [
