@@ -14,13 +14,14 @@
       content="小さな気配を見つめる絵本と、成長したミナの長編を並べたミナシリーズの本棚です。"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="100-mina-sekai-no-tsuzuki.jpg" />
+    <meta property="og:image" content="https://kazutumu.github.io/mina-series-site/nichijo-001.jpg" />
     <script
       async
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0054980586385736"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css?v=20261018-daily-001" />
+    <link rel="stylesheet" href="bookshelf.css?v=20261028" />
   <script src="mori-analytics.js" defer></script>
 </head>
   <body>
@@ -30,8 +31,9 @@
         <span>ミナシリーズ</span>
       </a>
       <nav class="nav" aria-label="ページ内ナビゲーション">
-        <a href="#main-books">本編</a>
+        <a href="#daily-books">ミナの日常</a>
         <a href="#bunko-books">ミナ文庫</a>
+        <a href="#main-books">本編100冊</a>
         <a href="#guide">読み方</a>
         <a href="#side-books">別枠</a>
         <a href="#about">森研究所</a>
@@ -41,27 +43,78 @@
     <main id="top">
       <section class="hero" aria-label="ミナシリーズ">
         <div class="hero-copy">
-          <p class="eyebrow">Mori Lab Mina Series</p>
-          <h1>ミナシリーズ</h1>
+          <p class="eyebrow">Mori Lab / Mina Bookshelf</p>
+          <h1>ミナと、<br>今日の小さな発見。</h1>
           <p class="lead">
-            小さな気配を見つめる絵本と、成長したミナが自分の道を選んでいく長編。Amazonで公開確認できる本をここに並べました。
+            雨あがりの音、窓ぎわのひなた、帰り道の寄り道。<br>まずは『ミナの日常』から。ゆっくり読みたい日には、長編の『ミナ文庫』をどうぞ。
           </p>
           <div class="hero-actions" aria-label="主要リンク">
-            <a class="button primary" href="#main-books">本編を見る</a>
+            <a class="button primary" href="#daily-books">ミナの日常を読む <span aria-hidden="true">↗</span></a>
             <a class="button" href="#bunko-books">ミナ文庫を見る</a>
-            <a class="button" href="#daily-books">ミナの日常を見る</a>
-            <a class="button" href="#guide">読む順番を見る</a>
-            <a class="button" href="https://www.amazon.co.jp/stores/%E3%81%88%E3%81%8F%E3%81%AE/author/B0H29YF2X4?ref=ap_rdr&shoppingPortalEnabled=true" target="_blank" rel="noreferrer">Amazon著者ページ</a>
           </div>
         </div>
         <div class="hero-shelf" aria-hidden="true">
-          <img src="98-mina-furui-michishirube.jpg" alt="" width="760" height="1216" />
-          <img src="99-mina-aruitekita-keshiki.jpg" alt="" width="760" height="1216" />
-          <img src="100-mina-sekai-no-tsuzuki.jpg" alt="" width="760" height="1216" />
+          <img src="nichijo-003.jpg" alt="" width="760" height="1216" />
+          <img src="nichijo-001.jpg" alt="" width="760" height="1216" />
+          <img src="nichijo-005.jpg" alt="" width="760" height="1216" />
         </div>
       </section>
 
+      <section id="daily-books" class="bunko-section">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">01 / Picture Books</p>
+            <h2>ミナの日常の本棚</h2>
+          </div>
+          <p>学生のミナが、身近な景色の小さな気配に出会う絵本シリーズ。第001〜005巻を公開しています。</p>
+        </div>
+        <div id="daily-grid" class="bunko-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="bunko-books" class="bunko-section">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">02 / Stories to Stay With</p>
+            <h2>ミナ文庫の本棚</h2>
+          </div>
+          <p>
+            一冊の物語と、ゆっくり過ごす時間。成長したミナの学びと選択を描く長編『ミナといくつもの道』。成長編は全6巻、その先の仕事編も全6巻で一区切りです。
+          </p>
+        </div>
+        <p><a class="text-link" href="#work-books">成長編のその先へ — 仕事編の本棚 ↓</a></p>
+        <div id="bunko-grid" class="bunko-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="work-books" class="bunko-section">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Mina Bunko / Working Life</p>
+            <h2>仕事編の本棚</h2>
+          </div>
+          <p>『ミナと朝の記録室』全6巻完結。成長編の扉の向こうで、見習いとして働き始めたミナの暮らしを描く長編です。仕事編はここで一区切り。ミナの物語は、まだ続きます。</p>
+        </div>
+        <div class="note-journey" aria-labelledby="work-start-title">
+          <div class="note-journey-heading">
+            <h3 id="work-start-title">仕事編の最初の一冊を選ぶなら</h3>
+            <p>第1巻『扉を開けた朝』では、暮らしの記録室で働き始めたミナが、最初の失敗と判断を通して、人の言葉が戻ってこられる記録を探します。</p>
+          </div>
+          <p>下のボタンからAmazonの商品ページへ進み、作品名・Kindle版の価格・購入方法を確認してからお選びください。</p>
+          <div class="hero-actions">
+            <a class="button primary" href="https://www.amazon.co.jp/dp/B0H8MC8C1P" target="_blank" rel="noreferrer">仕事編 第1巻の価格・購入方法を見る（Amazon・別タブ）</a>
+            <a class="text-link" href="#bunko-books">成長編から読みたい方はこちら ↑</a>
+          </div>
+          <p class="note">続きは下の本棚で第2〜6巻を巻順にご覧いただけます。</p>
+        </div>
+        <div id="work-grid" class="bunko-grid" aria-live="polite"></div>
+      </section>
+
       <section class="status-band" aria-label="現在の刊行状況">
+        <a class="status-link" href="#daily-books">
+          <span>ミナの日常</span>
+          <strong>5冊</strong>
+          <p>学生のミナの、小さな発見を描く絵本。</p>
+          <small>ミナの日常を見る ↓</small>
+        </a>
         <a class="status-link" href="#main-books">
           <span>本編</span>
           <strong>100冊</strong>
@@ -97,7 +150,7 @@
       <section id="guide" class="guide-section">
         <div class="section-heading">
           <p class="eyebrow">Reading Guide</p>
-          <h2>迷ったら、この順番で</h2>
+          <h2>もう少し、ミナの世界へ</h2>
         </div>
         <div class="guide-grid">
           <a class="guide-link" href="#main-books">
@@ -191,54 +244,6 @@
         <div id="book-grid" class="book-grid" aria-live="polite"></div>
       </section>
 
-      <section id="daily-books" class="bunko-section">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">Mina Everyday</p>
-            <h2>ミナの日常の本棚</h2>
-          </div>
-          <p>学生のミナが、身近な景色の小さな気配に出会う絵本シリーズ。第001〜005巻を公開しています。</p>
-        </div>
-        <div id="daily-grid" class="bunko-grid" aria-live="polite"></div>
-      </section>
-
-      <section id="bunko-books" class="bunko-section">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">Mina Bunko</p>
-            <h2>ミナ文庫の本棚</h2>
-          </div>
-          <p>
-            本編100冊のあと、成長したミナの時間を描く長編『ミナといくつもの道』。全6巻で成長編完結。旧本編の101冊目ではなく、独立したシリーズです。
-          </p>
-        </div>
-        <p><a class="text-link" href="#work-books">成長編のその先へ — 仕事編の本棚 ↓</a></p>
-        <div id="bunko-grid" class="bunko-grid" aria-live="polite"></div>
-      </section>
-
-      <section id="work-books" class="bunko-section">
-        <div class="section-heading split">
-          <div>
-            <p class="eyebrow">Mina Bunko / Working Life</p>
-            <h2>仕事編の本棚</h2>
-          </div>
-          <p>『ミナと朝の記録室』全6巻完結。成長編の扉の向こうで、見習いとして働き始めたミナの暮らしを描く長編です。仕事編はここで一区切り。ミナの物語は、まだ続きます。</p>
-        </div>
-        <div class="note-journey" aria-labelledby="work-start-title">
-          <div class="note-journey-heading">
-            <h3 id="work-start-title">仕事編の最初の一冊を選ぶなら</h3>
-            <p>第1巻『扉を開けた朝』では、暮らしの記録室で働き始めたミナが、最初の失敗と判断を通して、人の言葉が戻ってこられる記録を探します。</p>
-          </div>
-          <p>下のボタンからAmazonの商品ページへ進み、作品名・Kindle版の価格・購入方法を確認してからお選びください。</p>
-          <div class="hero-actions">
-            <a class="button primary" href="https://www.amazon.co.jp/dp/B0H8MC8C1P" target="_blank" rel="noreferrer">仕事編 第1巻の価格・購入方法を見る（Amazon・別タブ）</a>
-            <a class="text-link" href="#bunko-books">成長編から読みたい方はこちら ↑</a>
-          </div>
-          <p class="note">続きは下の本棚で第2〜6巻を巻順にご覧いただけます。</p>
-        </div>
-        <div id="work-grid" class="bunko-grid" aria-live="polite"></div>
-      </section>
-
       <section id="side-books" class="side-section">
         <div class="section-heading">
           <p class="eyebrow">Notes / Magazine / Side Stories</p>
@@ -273,6 +278,6 @@
       <p>作・構成　森研究所 / 昼の星を探しています。</p>
     </footer>
 
-    <script src="script.js?v=20261027-daily-005"></script>
+    <script src="script.js?v=20261028-bookshelf"></script>
   </body>
 </html>
