@@ -5,7 +5,9 @@ const dailyBooks = [
   { label: "ミナの日常 第002巻", title: "ミナの日常：ベンチの乾いたところ", cover: "nichijo-002.jpg", asin: "B0HNGVQ3K5", description: "雨あがりの帰り道、ミナが見つけたベンチの乾いた場所。小鳥と過ごす、ひと休みの物語。" },
   { label: "ミナの日常 第003巻", title: "ミナの日常：窓ぎわのひなた番", cover: "nichijo-003.jpg", asin: "B0HNH3FBNZ", description: "本を持ったミナと猫が、窓ぎわのひなたを半分こ。少しずつ動く光を追う、読書のひととき。" },
   { label: "ミナの日常 第004巻", title: "ミナの日常：落ち葉の待ち合わせ", cover: "nichijo-004.jpg", asin: "B0HP8WZJ3T", description: "石垣のそばに集まった色とりどりの落ち葉。風に動く葉っぱを見守る、森の小道の小さな出来事。" },
-  { label: "ミナの日常 第005巻", title: "ミナの日常：雨あがりの小さな音", cover: "nichijo-005.jpg", searchQuery: "ミナの日常 雨あがりの小さな音 えくの", description: "雨がやんだ森に残る、しずくの小さな音。耳をすませたミナが、葉っぱや枝先の気配を見つける第5巻。" }
+  { label: "ミナの日常 第005巻", title: "ミナの日常：雨あがりの小さな音", cover: "nichijo-005.jpg", searchQuery: "ミナの日常 雨あがりの小さな音 えくの", description: "雨がやんだ森に残る、しずくの小さな音。耳をすませたミナが、葉っぱや枝先の気配を見つける第5巻。" },
+  { label: "ミナの日常 第006巻", title: "ミナの日常：草の実の乗客", cover: "nichijo-006.jpg", searchQuery: "ミナの日常 草の実の乗客 えくの", description: "スカートの裾に、いつの間にか乗っていた草の実。小さな乗客をそっと降ろす、帰り道の物語。" },
+  { label: "ミナの日常 第007巻", title: "ミナの日常：小道のゆっくりさん", cover: "nichijo-007.jpg", searchQuery: "ミナの日常 小道のゆっくりさん えくの", description: "湿った小道を横切るかたつむりに道をあけ、ゆっくり待つミナ。足もとで出会った、小さな通行人の物語。" }
 ];
 
 const mainBooks = [
