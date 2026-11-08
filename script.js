@@ -7,7 +7,9 @@ const dailyBooks = [
   { label: "ミナの日常 第004巻", title: "ミナの日常：落ち葉の待ち合わせ", cover: "nichijo-004.jpg", asin: "B0HP8WZJ3T", description: "石垣のそばに集まった色とりどりの落ち葉。風に動く葉っぱを見守る、森の小道の小さな出来事。" },
   { label: "ミナの日常 第005巻", title: "ミナの日常：雨あがりの小さな音", cover: "nichijo-005.jpg", searchQuery: "ミナの日常 雨あがりの小さな音 えくの", description: "雨がやんだ森に残る、しずくの小さな音。耳をすませたミナが、葉っぱや枝先の気配を見つける第5巻。" },
   { label: "ミナの日常 第006巻", title: "ミナの日常：草の実の乗客", cover: "nichijo-006.jpg", searchQuery: "ミナの日常 草の実の乗客 えくの", description: "スカートの裾に、いつの間にか乗っていた草の実。小さな乗客をそっと降ろす、帰り道の物語。" },
-  { label: "ミナの日常 第007巻", title: "ミナの日常：小道のゆっくりさん", cover: "nichijo-007.jpg", searchQuery: "ミナの日常 小道のゆっくりさん えくの", description: "湿った小道を横切るかたつむりに道をあけ、ゆっくり待つミナ。足もとで出会った、小さな通行人の物語。" }
+  { label: "ミナの日常 第007巻", title: "ミナの日常：小道のゆっくりさん", cover: "nichijo-007.jpg", searchQuery: "ミナの日常 小道のゆっくりさん えくの", description: "湿った小道を横切るかたつむりに道をあけ、ゆっくり待つミナ。足もとで出会った、小さな通行人の物語。" },
+  { label: "ミナの日常 第008巻", title: "ミナの日常：足もとの青い空", cover: "nichijo-008.jpg", searchQuery: "ミナの日常 足もとの青い空 えくの", description: "雨のあとの水たまりに映る青い空と白い雲。しずくに揺れる足もとの空を、ミナがそっと見つめる物語。" },
+  { label: "ミナの日常 第009巻", title: "ミナの日常：ふたりで持つかご", cover: "nichijo-009.jpg", searchQuery: "ミナの日常 ふたりで持つかご えくの", description: "顔なじみのルカと、りんごのかごを一緒に運ぶミナ。歩幅と足音を合わせながら、おしゃべりを楽しむ帰り道。" }
 ];
 
 const mainBooks = [
