@@ -9,7 +9,12 @@ const dailyBooks = [
   { label: "ミナの日常 第006巻", title: "ミナの日常：草の実の乗客", cover: "nichijo-006.jpg", searchQuery: "ミナの日常 草の実の乗客 えくの", description: "スカートの裾に、いつの間にか乗っていた草の実。小さな乗客をそっと降ろす、帰り道の物語。" },
   { label: "ミナの日常 第007巻", title: "ミナの日常：小道のゆっくりさん", cover: "nichijo-007.jpg", searchQuery: "ミナの日常 小道のゆっくりさん えくの", description: "湿った小道を横切るかたつむりに道をあけ、ゆっくり待つミナ。足もとで出会った、小さな通行人の物語。" },
   { label: "ミナの日常 第008巻", title: "ミナの日常：足もとの青い空", cover: "nichijo-008.jpg", searchQuery: "ミナの日常 足もとの青い空 えくの", description: "雨のあとの水たまりに映る青い空と白い雲。しずくに揺れる足もとの空を、ミナがそっと見つめる物語。" },
-  { label: "ミナの日常 第009巻", title: "ミナの日常：ふたりで持つかご", cover: "nichijo-009.jpg", searchQuery: "ミナの日常 ふたりで持つかご えくの", description: "顔なじみのルカと、りんごのかごを一緒に運ぶミナ。歩幅と足音を合わせながら、おしゃべりを楽しむ帰り道。" }
+  { label: "ミナの日常 第009巻", title: "ミナの日常：ふたりで持つかご", cover: "nichijo-009.jpg", searchQuery: "ミナの日常 ふたりで持つかご えくの", description: "顔なじみのルカと、りんごのかごを一緒に運ぶミナ。歩幅と足音を合わせながら、おしゃべりを楽しむ帰り道。" },
+  { label: "ミナの日常 第010巻", title: "ミナの日常：風のとかし屋さん", cover: "nichijo-010.jpg", searchQuery: "ミナの日常 風のとかし屋さん えくの", description: "髪を整えるたび、ふわりと吹いてくる小道の風。気まぐれな風とのやりとりに、ミナが思わず笑う物語。" }
+];
+
+const dailySideBooks = [
+  { label: "ミナの日常 外伝 第001巻", title: "ミナの日常 外伝：持ち手のあいだ", cover: "nichijo-side-001.jpg", searchQuery: "ミナの日常 外伝 持ち手のあいだ えくの", description: "日常第001〜010巻を振り返る別のまなざし。りんごのかごを主役に、持ち手に伝わる重さとぬくもり、ふたりの歩幅を描きます。" }
 ];
 
 const mainBooks = [
@@ -466,6 +471,7 @@ function setupSideFilters() {
 renderMainBooks();
 renderBunkoBooks();
 renderBunkoBooks(dailyBooks, "#daily-grid");
+renderBunkoBooks(dailySideBooks, "#daily-side-grid");
 renderBunkoBooks(workBooks, "#work-grid");
 renderSideBooks();
 setupFilters();
